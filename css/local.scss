@@ -1,0 +1,140 @@
+@media screen and (max-width: 575px) {
+  #advertise {
+    > div {
+      > h2 {
+        font-size: 20px;
+      }
+      h5 {
+        font-size: 13px;
+      }
+    }
+  }
+  #intro{
+    padding-top: 6rem !important;
+    height: 130vh;
+    >figure{
+      >img{
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  #pricing{
+    >.row{
+      >.title{
+
+        p{
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  #intro{
+    padding-top: 6rem !important;
+    height: 130vh;
+    >figure{
+      >img{
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  #pricing{
+    >.row{
+      >.title{
+
+        p{
+          width: 87%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  #pricing{
+    >.row{
+      >.title{
+
+        p{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  #intro{
+    padding-top: 0 !important;
+    height: 100vh;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 862px;
+      height: 862px;
+      border-radius: 50%;
+      right: -150px;
+      top: -150px;
+      background: #99ecf2;
+      z-index: -1;
+    }
+    >figure{
+      >img{
+        width: 100%;
+      }
+    }
+  }
+  #about{
+    figure{
+      transition: .2s ease-in-out;
+    }
+  }
+  #template{
+    figure{
+      transition: .2s ease-in-out;
+    }
+  }
+  #pricing{
+    >.row{
+      >.title{
+
+        p{
+          width: 47%;
+        }
+      }
+    }
+  }
+  #pricing{
+    >.row{
+      >.content{
+        >article{
+          width: 31.22222222% !important;
+          >&:nth-of-type(1){
+            transform-origin: right;
+            transform: perspective(2300px) rotateY(26deg);
+            transition: .6s linear;
+            &:hover{
+              transform: perspective(2300px) rotateY(0deg);
+            }
+          }
+          >&:nth-of-type(3){
+            transform-origin: left;
+            transform: perspective(2300px) rotateY(-26deg);
+            transition: .6s linear;
+            &:hover{
+              transform: perspective(2300px) rotateY(0deg);
+            }
+            >.btn-price{
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+}
